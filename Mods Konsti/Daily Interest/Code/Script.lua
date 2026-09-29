@@ -52,10 +52,6 @@ PlaceObj('NotificationPreset', {
         302535920011336,
         "Daily Interest"
     ),
-    VoicedText = T(
-        7068,
-        "Daily Interest received"
-    ),
     group = "Default",
     id = "DailyInterest",
 })
@@ -71,10 +67,6 @@ PlaceObj('NotificationPreset', {
     ),
     Title = T(
         302535920011337,
-        "Debt Overdraft"
-    ),
-    VoicedText = T(
-        7068,
         "Debt Overdraft"
     ),
     group = "Default",
