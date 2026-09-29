@@ -9,14 +9,14 @@ local function UpdateInterestRate()
         interest_rate = 1
         return
     end
-    local percentage = tonumber(options.Interestrate)
-    if percentage == nil then
+    local interestrate_number = tonumber(options.Interestrate)
+    if interestrate_number == nil then
         print("ERROR: Interestrate could not be converted to a number")
         interest_rate = 1
         return
     end
     
-    interest_rate = percentage
+    interest_rate = interestrate_number
 end
 
 FundingSourceTexts = FundingSourceTexts or {}
@@ -63,7 +63,7 @@ PlaceObj('NotificationPreset', {
     Image = "UI/IconsRemaster/Notifications/funding.png",
     RightTitle = T(
         604752595099,
-        "<funding(sum(0,'number',objects))>"
+        "<funding(-sum(0,'number',objects))>"
     ),
     Title = T(
         302535920011337,
