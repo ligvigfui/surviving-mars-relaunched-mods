@@ -90,6 +90,9 @@ local function AddInterest(colony)
     end
 
     colony.funds:ChangeFunding(actual_interest)
+    
+    actual_interest = colony.funds.funding - current_funding
+
     if actual_interest > 0 then
         colony.funds.funding_gain_sol =
             colony.funds.funding_gain_sol or {}
